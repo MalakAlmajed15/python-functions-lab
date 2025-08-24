@@ -26,7 +26,7 @@ print('Exercise 1:', calculate_area_triangle(10, 5))
 # Define your function and call it to see the result.
 
 def simple_interest(principal, rate, time):
-    return (principal * rate * time) / 100
+    return (principal * rate * time) // 100
 
 print('Exercise 2:', simple_interest(1000, 5, 2))
 
@@ -80,8 +80,7 @@ print('Exercise 4: Convert 32°F to Celsius:', convert_temperature(32, 'F'))
 # Define the function and then call it below.
 
 def sum_to(num):
-    for i in range(1,num+1):
-        return 
+    return num * (num + 1) // 2 
 
 print('Exercise 5:', sum_to(6))
 
@@ -132,7 +131,7 @@ print('Exercise 7:', calculate_tip(50, 20))
 # Define the function and call it with different sets of numbers to test.
 
 def product(*args):
-    product = 0
+    product = 1
     for arg in args:
         product *= arg
     return product
